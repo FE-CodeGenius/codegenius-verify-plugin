@@ -24,7 +24,9 @@ const gitCommitVerify = async () => {
 
 const gitCommitVerifyInstaller = () => {
   return {
-    name: "gitCommitVerifyInstaller",
+    name: "verify",
+    describe: "校验 COMMIT_EDITMSG 中的信息是否符合 Angualr 规范",
+    command: "verify",
     setup: (cli: CAC) => {
       cli
         .command("verify", "校验 COMMIT_EDITMSG 中的信息是否符合 Angualr 规范")
